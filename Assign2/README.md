@@ -1,8 +1,11 @@
 NumPy-Based Student Analytics System
 
 Details
+
 Name:Afifa Begum
+
 Domain:ML
+
 Assignment:2(numpy based student analytics system)
 
 Learning Summary
