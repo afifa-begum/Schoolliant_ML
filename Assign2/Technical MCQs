@@ -1,0 +1,109 @@
+Section-B
+
+1. What is the shape of the following NumPy array?
+np.array([[1, 2, 3], [4, 5, 6]])
+A. (3, 2)
+B. (2, 3)
+C. (6,)
+D. (1, 6)
+ans.B. (2, 3)
+
+2. Which operation creates a completely independent copy of a NumPy array?
+A. b = a
+B. b = a.view()
+C. b = a.copy()
+D. b = np.assign(a)
+ans.C. b = a.copy()
+
+3. Broadcasting works when:
+A. Arrays are identical
+B. Shapes are compatible
+C. Arrays are square
+D. Arrays are sorted
+ans.B. Shapes are compatible
+
+4. Which operation performs true matrix multiplication?
+A. a * b
+B. a + b
+C. np.matmul(a, b)
+D. np.multiply(a, b)
+ans.C. np.matmul(a, b)
+
+5. Which attribute returns the memory occupied by a single element in a NumPy array?
+A. ndim
+B. size
+C. itemsize
+D. dtype
+ans.C. itemsize
+
+6. What will the following statement do?
+arr.reshape(-1, 1)
+A. Create a row vector
+B. Create a column vector
+C. Flatten the array
+D. Transpose the array
+ans.B. Create a column vector
+
+7. Which function generates random integers in NumPy?
+A. np.rand()
+B. np.randint()
+C. np.randomize()
+D. np.int()
+ans B. np.randint()
+
+9. Which NumPy module contains functions for determinants, inverses, and matrix operations?
+A. np.stats
+B. np.random
+C. np.linalg
+D. np.math
+ans C. np.linalg
+
+10. Which NumPy feature significantly reduces the need for explicit loops?
+A. Broadcasting
+B. Printing
+C. Indexing
+D. Sorting
+ans A. Broadcasting
+
+Bonus MCQs (Interview Level)
+
+11. What is the output shape of:
+a = np.array([[1], [2], [3]])
+b = np.array([10, 20, 30])
+a + b
+A. (3,)
+B. (3,1)
+C. (3,3)
+D. Error
+ans C. (3,3)
+
+12. What happens when you execute:
+a = np.array([1, 2, 3])
+b = a
+b[0] = 100
+A. Only b changes
+B. Only a changes
+C. Both a and b change
+D. Error
+ans C. Both a and b change
+
+13. Which function creates an identity matrix of size 4×4?
+A. np.eye(4)
+B. np.zeros((4,4))
+C. np.ones((4,4))
+D. np.random((4,4))
+ans A. np.eye(4)
+
+14. Which axis represents columns?
+A. np.eye(4)
+B. axis=1
+C. axis=2
+D. None of the above
+ans A. np.eye(4)
+
+15. What is the primary advantage of NumPy vectorized operations?
+A. Better formatting
+B. Reduced memory usage only
+C. Faster execution by avoiding Python loops
+D. Easier printing of arrays
+ans C. Faster execution by avoiding Python loops
