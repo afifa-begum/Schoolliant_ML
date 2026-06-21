@@ -1,0 +1,65 @@
+section-A 
+Q1.Why is a NumPy array faster than a Python list internally?
+NumPy arrays are faster because they store data in contiguous memory and are implemented in C.
+
+Q2.What is vectorization? Why is it preferred over loops?
+Vectorization means performing operations on whole arrays without loops. It is faster than Python loops.
+
+Q3.Explain contiguous memory allocation and how it improves performance.
+Contiguous memory means data is stored continuously in memory, improving cache efficiency and speed.
+
+Q4.What happens internally when you execute:
+b = a
+instead of
+b = a.copy()
+b = a creates a reference to the same array.
+b = a.copy() creates an copy.
+
+Q5.Differentiate between:
+reshape() : Changes shape
+flatten() : Returns copy in 1D
+ravel() : Returns view in 1D
+
+Q6.What is broadcasting?
+Give one practical example
+Broadcasting allows NumPy to perform operations on arrays of different shapes.
+a = np.array([1,2,3])
+a + 5
+o/p : [6 7 8]
+
+Q7.When will broadcasting fail?Explain with an example.
+Broadcasting fails when shapes are incompatible.
+a = np.array([1,2,3])
+b = np.array([1,2])
+a+b
+
+Q8.What is the difference between:
+a * b
+and
+np.matmul(a,b)
+a * b is element wise multipication and np.matmul(a,b) is matrix mult
+
+Q9.Why does NumPy force arrays to have a fixed datatype?
+Fixed datatype allows efficient memory usage and faster computations.
+
+Q10.Explain the purpose of:
+axis=0
+axis=1
+for statistical operations
+axis=0 : Column-wise
+axis=1 : Row-wise
+
+Q11.Why can NumPy perform millions of operations faster than a Python loop?
+NumPy uses optimized C code and vectorized operations.
+
+Q12.What is Boolean Masking and why is it heavily used in Data Science?
+Boolean Masking filters data using True/False conditions.
+
+Q13.Explain the difference between:
+np.vstack() : Vertical stacking
+np.hstack() : Horizontal stacking
+np.concatenate() : Join along specified axis
+
+Q14.How would you find all students scoring between 60 and 80 marks using Boolean Masking?
+marks[(marks >= 60) & (marks <= 80)]
+
